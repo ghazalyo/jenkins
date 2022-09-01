@@ -21,7 +21,7 @@ pipeline {
 
     stage('DEPLOY') {
       steps {
-        sh 'cp target/*.war /home/jenkins/webapps/spark.war'
+        sh 'cp target/*.war /home/jenkins/webapps/'
       }
     }
 
