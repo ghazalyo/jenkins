@@ -22,9 +22,9 @@ pipeline {
     stage('DEPLOY') {
       steps {
         sh "echo deploy"
-      }
 deploy adapters: [tomcat9(credentialsId: '11c1faf2-b487-4249-aaaf-afca030eaee5', path: '', url: '172.17.0.5:8080')], contextPath: '/chocolat', war: 'target/*.war'
     }
 
   }
+}
 }
