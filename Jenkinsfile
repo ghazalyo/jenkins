@@ -15,7 +15,7 @@ pipeline {
 
     stage('POST BUILD') {
       steps {
-        archiveArtifacts(artifacts: '*/*.war', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: '**/*.war', onlyIfSuccessful: true)
       }
     }
 
